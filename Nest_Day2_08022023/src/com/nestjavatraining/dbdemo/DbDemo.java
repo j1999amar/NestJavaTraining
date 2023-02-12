@@ -22,18 +22,17 @@ public class DbDemo {
 			String userName ="root";
 			String password ="";
 			Connection connection = DriverManager.getConnection(connectionString,userName,password);
-			
 			while(flag){
-				System.out.println(   "1. View All Employees  "
+				System.out.println(   "1. View All Employees"
 									+ "2. Insert Employee "
 									+ "3. Search Employee "
 									+ "4. Update Employee " 
 									+ "5. Delete Employee "
 									+ "6. Exit"); 
+				
 				Scanner scanner = new Scanner(System.in); 
 				int choice = scanner.nextInt();
 				scanner.nextLine();
-				
 				switch(choice) {
 				  case 1:
 					  	Statement statement = connection.createStatement();
