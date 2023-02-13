@@ -17,5 +17,14 @@ public class WomenSavingAccount extends SavingsAccount {
 		super(accountCode, accountName, openingDate, expiryDate, accountBalance);
 		this.freeLimit = freeLimit;
 	}
+	
+
+	@Override
+	public String toString() {
+//		return super.toString()+"\n"+"WomenSavingsAccount [freeLimit=" + freeLimit + "]";
+		String forTableFormat = Integer.toString(freeLimit);
+		return super.toString() +"       "+ forTableFormat;
+	}
+
 
 }

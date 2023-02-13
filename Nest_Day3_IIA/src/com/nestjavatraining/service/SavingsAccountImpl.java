@@ -70,22 +70,30 @@ public class SavingsAccountImpl implements AccountService {
 
 	public void displayAllAccount(ArrayList<SavingsAccount> accountsList) {
 		int counter = 1;
-		for (SavingsAccount account : accountsList) {
-			if (account instanceof WomenSavingAccount) {
-				WomenSavingAccount womenAccount = (WomenSavingAccount) account;
-				System.out.println(counter + "\t" + womenAccount.getAccountCode() + "\t" + womenAccount.getAccountName()
-						+ "\t" + womenAccount.getOpeningDate() + "\t" + womenAccount.getExpiryDate() + "\t"
-						+ womenAccount.getAccountBalance() + "\t" + womenAccount.getFreeLimit());
-				counter++;
-			}
-			if (account instanceof SavingMaxAccount) {
-				SavingMaxAccount savingMaxAccount = (SavingMaxAccount) account;
-				System.out.println(
-						counter + "\t" + savingMaxAccount.getAccountCode() + "\t" + savingMaxAccount.getAccountName()
-								+ "\t" + savingMaxAccount.getOpeningDate() + "\t" + savingMaxAccount.getExpiryDate()
-								+ "\t" + savingMaxAccount.getAccountBalance() + "\t" + "NIL");
-				counter++;
-			}
+		
+		for (SavingsAccount account : accountsList){
+	         System.out.println(Integer.toString(counter) +'\t'+ account);
+	         counter++;
 		}
+		
+//		for (SavingsAccount account : accountsList) {
+//			if (account instanceof WomenSavingAccount) {
+//				WomenSavingAccount womenAccount = (WomenSavingAccount) account;
+//				System.out.println(counter + "\t" + womenAccount.getAccountCode() + "\t" + womenAccount.getAccountName()
+//						+ "\t" + womenAccount.getOpeningDate() + "\t" + womenAccount.getExpiryDate() + "\t"
+//						+ womenAccount.getAccountBalance() + "\t" + womenAccount.getFreeLimit());
+//				counter++;
+//			}
+//			if (account instanceof SavingMaxAccount) {
+//				SavingMaxAccount savingMaxAccount = (SavingMaxAccount) account;
+//				System.out.println(
+//						counter + "\t" + savingMaxAccount.getAccountCode() + "\t" + savingMaxAccount.getAccountName()
+//								+ "\t" + savingMaxAccount.getOpeningDate() + "\t" + savingMaxAccount.getExpiryDate()
+//								+ "\t" + savingMaxAccount.getAccountBalance() + "\t" + "NIL");
+//				counter++;
+//			}
+//		
+//		
+//		}
 	}
 }

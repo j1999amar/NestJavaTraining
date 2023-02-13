@@ -18,6 +18,15 @@ public abstract class SavingsAccount extends Account {
 		super(accountCode, accountName, openingDate, expiryDate);
 		this.accountBalance = accountBalance;
 	}
+	
+	@Override
+	public String toString() {
+		
+//		return super.toString()+"\n"+"SavingsAccount [accountBalance=" + accountBalance + "]";
+		String forTableFormat = Double.toString(accountBalance);
+		return super.toString() +'\t'+ forTableFormat;
+	}
+
 
 
 	

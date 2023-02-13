@@ -45,6 +45,14 @@ public class Account {
 		this.expiryDate = expiryDate;
 	}
 	
+	@Override
+	public String toString() {
+//		return "Account [accountCode=" + accountCode + ", accountName=" + accountName + ", openingDate=" + openingDate
+//				+ ", expiryDate=" + expiryDate + "]";
+		String forTableFormat = accountCode +'\t'+"    "+ accountName +"   "+ openingDate +'\t'+" "+ expiryDate;
+		return forTableFormat;
+	}
+	
 
 	
 
