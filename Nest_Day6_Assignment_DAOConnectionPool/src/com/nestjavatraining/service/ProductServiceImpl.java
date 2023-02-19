@@ -12,6 +12,8 @@ public class ProductServiceImpl implements ProductService {
 
 	@Override
 	public void saveProduct(Product product) {
+		 productDao.saveProduct(product);
+		
 		// TODO Auto-generated method stub
 
 	}
@@ -24,14 +26,15 @@ public class ProductServiceImpl implements ProductService {
 	}
 
 	@Override
-	public Product getProduct(String productCode) {
+	public void getProduct(String productCode) {
 		// TODO Auto-generated method stub
-		return null;
+		productDao.getProduct(productCode);
 	}
 
 	@Override
 	public void deleteProduct(String productCode) {
 		// TODO Auto-generated method stub
+		productDao.deleteProduct(productCode);
 
 	}
 
