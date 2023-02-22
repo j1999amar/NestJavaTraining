@@ -30,25 +30,15 @@ public class CustomerUtility {
 		int choice = scanner.nextInt();
 
 		if (choice == 1) {
-			Collections.sort(a, new Comparator<Customer>() {
-				@Override
-				public int compare(Customer o1, Customer o2) {
-					return o1.getName().compareTo(o2.getName());
-				}
-				
-			});
+			Collections.sort(a,(Customer o1, Customer o2)-> o1.getName().compareTo(o2.getName()));
+			
 			for (Customer customer : a) {
 				System.out.println(customer);
 			}
 			
 		} else if (choice == 2) {
-			Collections.sort(  a, new Comparator<Customer>() {
+			Collections.sort(a,(Customer o1, Customer o2)->o1.getAge()-o2.getAge());
 
-				@Override
-				public int compare(Customer o1, Customer o2) {
-					return Integer.compare(o1.getAge(), o2.getAge());
-				}
-			});
 			for (Customer customer : a) {
 				System.out.println(customer);
 			}
