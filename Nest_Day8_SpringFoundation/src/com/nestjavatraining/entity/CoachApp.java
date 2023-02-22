@@ -20,7 +20,7 @@ public class CoachApp {
 		int continueChoice;
 		do {
 			System.out.println("Enter the choice\n");
-			System.out.println("1.Cricket Coach\n2.Hockey Coach\n3.Baseball Coach");
+			System.out.println("1.Cricket Coach\n2.Hockey Coach\n3.Baseball Coach\n4.Exit");
 			int choice=scanner.nextInt();
 			switch(choice)
 			{
@@ -39,7 +39,8 @@ public class CoachApp {
 				theCoach=context.getBean("baseBallCoach",BaseballCoach.class);
 				System.out.println("Daily Workout : "+theCoach.getDailyWorkout()+"\n"+"Daily Fortune : "+theCoach.getDailyFortune());
 				break;
-			
+			case 4:
+				System.exit(0);
 			}
 			
 			System.out.println("\nDo you want continue ?\n1.Yes\n2.No");
