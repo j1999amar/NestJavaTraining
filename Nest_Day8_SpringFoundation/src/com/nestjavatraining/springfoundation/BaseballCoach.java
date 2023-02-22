@@ -1,6 +1,6 @@
 package com.nestjavatraining.springfoundation;
 
-public class BaseballCoach extends CoachImpl {
+public class BaseballCoach implements Coach {
 	
 	@Override
 	public String getDailyWorkout() {

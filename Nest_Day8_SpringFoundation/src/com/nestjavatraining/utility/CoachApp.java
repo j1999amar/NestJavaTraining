@@ -1,4 +1,4 @@
-package com.nestjavatraining.entity;
+package com.nestjavatraining.utility;
 
 import java.util.Scanner;
 
