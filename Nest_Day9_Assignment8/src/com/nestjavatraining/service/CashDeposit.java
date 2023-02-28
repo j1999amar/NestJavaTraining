@@ -2,7 +2,7 @@ package com.nestjavatraining.service;
 
 import java.util.List;
 
-import com.nestjavatraining.entity.Account;
+import com.nestjavatrainig.entity.Account;
 
 public class CashDeposit implements AccountService {
 
