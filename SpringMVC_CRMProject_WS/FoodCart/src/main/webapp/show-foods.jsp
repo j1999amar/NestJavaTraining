@@ -11,11 +11,11 @@
 	<center>
 		<h1>Foods</h1>
 		<table border="5" cellpadding="20">
-<tr>
-					<th>Code</th>
-					<th>Items</th>
-					<th>Price</th>
-				</tr>
+			<tr>
+				<th>Code</th>
+				<th>Items</th>
+				<th>Price</th>
+			</tr>
 			<cl:forEach var="items" items="${foodList }">
 				<tr>
 					<td>${items.id}</td>
